@@ -75,6 +75,8 @@ The system analyzes medical images (X-Ray, MRI, CT Scan, ECG, Ultrasound) and ge
 - 🔐 **Secure Configuration**: Environment variable-based API key management
 - 📈 **Scalable Architecture**: Modular design for easy extension
 
+#-architecture
+https://github.com/pramodklal/MedLangGraphAgent/blob/main/image/architecture_diagram.jpg
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -1048,5 +1050,6 @@ For issues and questions:
 **Remember: Always consult qualified healthcare professionals for medical decisions.**
 
 © 2025 | Medical Image Analysis System | Educational Use Only
+
 
 
