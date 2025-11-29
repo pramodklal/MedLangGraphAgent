@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Microsoft Visio XML Format - Import this into Visio -->
+<VisioDocument xmlns="http://schemas.microsoft.com/visio/2003/core">
+  <DocumentProperties>
+    <Title>MedAgentAI - AI Powered Medical Image Analysis System Architecture</Title>
+    <Creator>MedAgentAI Project</Creator>
+    <Company>Healthcare AI</Company>
+    <Category>Architecture Diagram</Category>
+  </DocumentProperties>
+  
+  <Pages>
+    <Page ID="1" Name="System Architecture">
+      <PageSheet>
+        <PageWidth>11</PageWidth>
+        <PageHeight>8.5</PageHeight>
+      </PageSheet>
+      
+      <Shapes>
+        <!-- Title -->
+        <Shape ID="1" Type="Text" Name="Title">
+          <Text>MedARPR - Medical Image Analysis System Architecture</Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>8</PinY>
+            <Width>8</Width>
+            <Height>0.4</Height>
+          </XForm>
+          <TextStyle FontSize="20pt" Bold="true" Align="Center"/>
+        </Shape>
+
+        <!-- User -->
+        <Shape ID="2" Type="Actor" Name="User">
+          <Text>End User&#x0A;(Doctor/Technician)</Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>7.2</PinY>
+            <Width>1</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#DAE8FC"/>
+          <Line LineColor="#6C8EBF" LineWeight="2pt"/>
+        </Shape>
+
+        <!-- Presentation Layer Container -->
+        <Shape ID="3" Type="Rectangle" Name="PresentationLayer">
+          <Text></Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>6</PinY>
+            <Width>9</Width>
+            <Height>1.2</Height>
+          </XForm>
+          <Fill FillForegnd="#E1D5E7"/>
+          <Line LineColor="#9673A6" LineWeight="2pt"/>
+        </Shape>
+
+        <Shape ID="4" Type="Text" Name="PresentationTitle">
+          <Text>PRESENTATION LAYER</Text>
+          <XForm>
+            <PinX>2.5</PinX>
+            <PinY>6.5</PinY>
+            <Width>2</Width>
+            <Height>0.3</Height>
+          </XForm>
+          <TextStyle FontSize="14pt" Bold="true" Align="Left"/>
+        </Shape>
+
+        <!-- Streamlit App -->
+        <Shape ID="5" Type="Rectangle" Name="StreamlitApp">
+          <Text>Streamlit Web App&#x0A;(app.py)</Text>
+          <XForm>
+            <PinX>2.5</PinX>
+            <PinY>5.7</PinY>
+            <Width>1.4</Width>
+            <Height>0.7</Height>
+          </XForm>
+          <Fill FillForegnd="#DAE8FC"/>
+          <Line LineColor="#6C8EBF"/>
+        </Shape>
+
+        <!-- Sidebar -->
+        <Shape ID="6" Type="Rectangle" Name="Sidebar">
+          <Text>Sidebar&#x0A;• Upload Image&#x0A;• Select Type&#x0A;• Analyze Button</Text>
+          <XForm>
+            <PinX>4.2</PinX>
+            <PinY>5.7</PinY>
+            <Width>1.3</Width>
+            <Height>0.7</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Main Area -->
+        <Shape ID="7" Type="Rectangle" Name="MainArea">
+          <Text>Main Area&#x0A;• Image Display&#x0A;• Progress Bar&#x0A;• Status Panel</Text>
+          <XForm>
+            <PinX>5.8</PinX>
+            <PinY>5.7</PinY>
+            <Width>1.3</Width>
+            <Height>0.7</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Result Tabs -->
+        <Shape ID="8" Type="Rectangle" Name="ResultTabs">
+          <Text>Result Tabs (4)&#x0A;• Full Report&#x0A;• Medications&#x0A;• Care Plan&#x0A;• Doctor Summary</Text>
+          <XForm>
+            <PinX>7.5</PinX>
+            <PinY>5.7</PinY>
+            <Width>1.3</Width>
+            <Height>0.7</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Orchestration Layer Container -->
+        <Shape ID="9" Type="Rectangle" Name="OrchestrationLayer">
+          <Text></Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>3.8</PinY>
+            <Width>9</Width>
+            <Height>2.4</Height>
+          </XForm>
+          <Fill FillForegnd="#FFF2CC"/>
+          <Line LineColor="#D6B656" LineWeight="2pt"/>
+        </Shape>
+
+        <Shape ID="10" Type="Text" Name="OrchestrationTitle">
+          <Text>ORCHESTRATION LAYER - LangGraph Multi-Agent Workflow</Text>
+          <XForm>
+            <PinX>3</PinX>
+            <PinY>4.8</PinY>
+            <Width>5</Width>
+            <Height>0.3</Height>
+          </XForm>
+          <TextStyle FontSize="14pt" Bold="true" Align="Left"/>
+        </Shape>
+
+        <!-- Agent 1: Preprocessing -->
+        <Shape ID="11" Type="Rectangle" Name="Agent1">
+          <Text>Agent 1&#x0A;Image&#x0A;Preprocessing</Text>
+          <XForm>
+            <PinX>2.2</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Agent 2: Vision Analysis (API CALL #1) -->
+        <Shape ID="12" Type="Rectangle" Name="Agent2">
+          <Text>Agent 2&#x0A;Vision Analysis&#x0A;(API CALL #1)</Text>
+          <XForm>
+            <PinX>3.3</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#FFE6CC"/>
+          <Line LineColor="#D79B00" LineWeight="2pt"/>
+        </Shape>
+
+        <!-- Agent 3: Disease Identification -->
+        <Shape ID="13" Type="Rectangle" Name="Agent3">
+          <Text>Agent 3&#x0A;Disease&#x0A;Identification</Text>
+          <XForm>
+            <PinX>4.4</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Agent 4: Root Cause -->
+        <Shape ID="14" Type="Rectangle" Name="Agent4">
+          <Text>Agent 4&#x0A;Root Cause&#x0A;Analysis</Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Agent 5: Medication Orchestration -->
+        <Shape ID="15" Type="Rectangle" Name="Agent5">
+          <Text>Agent 5&#x0A;Medication&#x0A;Orchestration</Text>
+          <XForm>
+            <PinX>6.6</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- Agent 6: Treatment Generation (API CALL #2) -->
+        <Shape ID="16" Type="Rectangle" Name="Agent6">
+          <Text>Agent 6&#x0A;Treatment Gen&#x0A;(API CALL #2)</Text>
+          <XForm>
+            <PinX>7.7</PinX>
+            <PinY>4.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#FFE6CC"/>
+          <Line LineColor="#D79B00" LineWeight="2pt"/>
+        </Shape>
+
+        <!-- Agent 7: Report Compilation -->
+        <Shape ID="17" Type="Rectangle" Name="Agent7">
+          <Text>Agent 7&#x0A;Report&#x0A;Compilation</Text>
+          <XForm>
+            <PinX>4.4</PinX>
+            <PinY>3.2</PinY>
+            <Width>0.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#D5E8D4"/>
+          <Line LineColor="#82B366"/>
+        </Shape>
+
+        <!-- State Management -->
+        <Shape ID="18" Type="Rectangle" Name="StateManagement">
+          <Text>MedicalAnalysisState (TypedDict)&#x0A;image_data | image_type | analysis_results&#x0A;diseases | root_causes | medications&#x0A;care_plan | doctor_summary | final_report</Text>
+          <XForm>
+            <PinX>2.4</PinX>
+            <PinY>3.2</PinY>
+            <Width>1.9</Width>
+            <Height>0.6</Height>
+          </XForm>
+          <Fill FillForegnd="#F8CECC"/>
+          <Line LineColor="#B85450"/>
+          <TextStyle FontSize="8pt" Align="Left"/>
+        </Shape>
+
+        <!-- AI Model Layer Container -->
+        <Shape ID="19" Type="Rectangle" Name="AIModelLayer">
+          <Text></Text>
+          <XForm>
+            <PinX>5.5</PinX>
+            <PinY>1.5</PinY>
+            <Width>9</Width>
+            <Height>1</Height>
+          </XForm>
+          <Fill FillForegnd="#F5F5F5"/>
+          <Line LineColor="#666666" LineWeight="2pt"/>
+        </Shape>
+
+        <Shape ID="20" Type="Text" Name="AIModelTitle">
+          <Text>AI MODEL LAYER - Google Gemini 2.5 Flash</Text>
+          <XForm>
+            <PinX>3</PinX>
+            <PinY>1.9</PinY>
+            <Width>4</Width>
+            <Height>0.3</Height>
+          </XForm>
+          <TextStyle FontSize="14pt" Bold="true" Align="Left"/>
+        </Shape>
+
+        <!-- Gemini Vision API -->
+        <Shape ID="21" Type="Rectangle" Name="GeminiVision">
+          <Text>Vision API&#x0A;Multimodal Image Analysis</Text>
+          <XForm>
+            <PinX>3.8</PinX>
+            <PinY>1.4</PinY>
+            <Width>1.8</Width>
+            <Height>0.4</Height>
+          </XForm>
+          <Fill FillForegnd="#FFE6CC"/>
+          <Line LineColor="#D79B00"/>
+        </Shape>
+
+        <!-- Gemini Text API -->
+        <Shape ID="22" Type="Rectangle" Name="GeminiText">
+          <Text>Text API&#x0A;Treatment Generation</Text>
+          <XForm>
+            <PinX>7.2</PinX>
+            <PinY>1.4</PinY>
+            <Width>1.8</Width>
+            <Height>0.4</Height>
+          </XForm>
+          <Fill FillForegnd="#FFE6CC"/>
+          <Line LineColor="#D79B00"/>
+        </Shape>
+
+        <!-- Legend Box -->
+        <Shape ID="23" Type="Rectangle" Name="LegendBox">
+          <Text></Text>
+          <XForm>
+            <PinX>1</PinX>
+            <PinY>3.5</PinY>
+            <Width>1.4</Width>
+            <Height>1.8</Height>
+          </XForm>
+          <Fill FillForegnd="#FFFFFF"/>
+          <Line LineColor="#000000"/>
+        </Shape>
+
+        <Shape ID="24" Type="Text" Name="LegendTitle">
+          <Text>LEGEND</Text>
+          <XForm>
+            <PinX>1</PinX>
+            <PinY>4.2</PinY>
+            <Width>1.4</Width>
+            <Height>0.25</Height>
+          </XForm>
+          <TextStyle FontSize="12pt" Bold="true" Align="Center"/>
+        </Shape>
+
+        <!-- Performance Metrics -->
+        <Shape ID="25" Type="Rectangle" Name="Metrics">
+          <Text>PERFORMANCE&#x0A;⏱️ Processing: 50-60s&#x0A;📞 API Calls: 2&#x0A;🎯 Optimization: 60%</Text>
+          <XForm>
+            <PinX>9.8</PinX>
+            <PinY>6</PinY>
+            <Width>1.4</Width>
+            <Height>1</Height>
+          </XForm>
+          <Fill FillForegnd="#E1D5E7"/>
+          <Line LineColor="#9673A6"/>
+          <TextStyle FontSize="10pt" Bold="true" Align="Left"/>
+        </Shape>
+
+        <!-- Tech Stack -->
+        <Shape ID="26" Type="Rectangle" Name="TechStack">
+          <Text>TECH STACK&#x0A;• LangGraph 1.0.3&#x0A;• Gemini 2.5 Flash&#x0A;• Streamlit 1.40.2&#x0A;• Python 3.11</Text>
+          <XForm>
+            <PinX>9.8</PinX>
+            <PinY>4.5</PinY>
+            <Width>1.4</Width>
+            <Height>1</Height>
+          </XForm>
+          <Fill FillForegnd="#FFF2CC"/>
+          <Line LineColor="#D6B656"/>
+          <TextStyle FontSize="9pt" Bold="true" Align="Left"/>
+        </Shape>
+
+      </Shapes>
+
+      <!-- Connectors -->
+      <Connects>
+        <Connect FromSheet="2" ToSheet="5" FromCell="Bottom" ToCell="Top"/>
+        <Connect FromSheet="5" ToSheet="11" FromCell="Bottom" ToCell="Top"/>
+        <Connect FromSheet="11" ToSheet="12" FromCell="Right" ToCell="Left"/>
+        <Connect FromSheet="12" ToSheet="13" FromCell="Right" ToCell="Left"/>
+        <Connect FromSheet="13" ToSheet="14" FromCell="Right" ToCell="Left"/>
+        <Connect FromSheet="14" ToSheet="15" FromCell="Right" ToCell="Left"/>
+        <Connect FromSheet="15" ToSheet="16" FromCell="Right" ToCell="Left"/>
+        <Connect FromSheet="16" ToSheet="17" FromCell="Bottom" ToCell="Top"/>
+        <Connect FromSheet="12" ToSheet="21" FromCell="Bottom" ToCell="Top" Style="Dashed"/>
+        <Connect FromSheet="16" ToSheet="22" FromCell="Bottom" ToCell="Top" Style="Dashed"/>
+        <Connect FromSheet="17" ToSheet="8" FromCell="Top" ToCell="Bottom"/>
+      </Connects>
+
+    </Page>
+  </Pages>
+</VisioDocument>
