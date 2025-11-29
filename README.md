@@ -12,7 +12,7 @@
 
 ## 🚀 Live Demo
 
-🔗 **[Try MedARPR Live on Streamlit Cloud](#)** _(coming soon)_
+🔗 [**[Try MedARPR Live on Streamlit Cloud](#)**](https://pramodlal-medaiagent.streamlit.app/)
 
 ## 📋 Table of Contents
 
@@ -1048,4 +1048,5 @@ For issues and questions:
 **Remember: Always consult qualified healthcare professionals for medical decisions.**
 
 © 2025 | Medical Image Analysis System | Educational Use Only
+
 
