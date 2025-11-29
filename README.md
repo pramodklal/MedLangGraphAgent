@@ -1,4 +1,4 @@
-# 🏥 MedARPR - Medical AI Radiology & Pathology Report
+# 🏥 MedAgentAI - AI Powered Medical Image Analysis 
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1.0.3-green.svg)](https://python.langchain.com/docs/langgraph)
@@ -32,7 +32,7 @@
 
 ## 🎯 Overview
 
-**MedARPR** is an intelligent medical image analysis system that leverages the power of:
+** - Medical AI Radiology & Pathology Report** is an intelligent medical image analysis system that leverages the power of:
 - **Multi-Agent AI Architecture**: 7 specialized agents working in orchestrated sequence
 - **LangGraph State Machine**: Advanced workflow orchestration for complex medical analysis
 - **Google Gemini 2.5 Flash**: State-of-the-art multimodal AI for vision and text generation
@@ -1048,3 +1048,4 @@ For issues and questions:
 **Remember: Always consult qualified healthcare professionals for medical decisions.**
 
 © 2025 | Medical Image Analysis System | Educational Use Only
+
